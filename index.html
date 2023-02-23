@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>IEEE Task</title>
+  </head>
+  <body oncontextmenu="return false">
+    <header class="main-header">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li class="logo nav-link"><a href="#">Logo</a></li>
+          <li class="nav-link"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#">Contact</a></li>
+          <li class="nav-link"><a href="#">About us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h2 class="title">Our Team</h2>
+      <p class="title-m mt-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio
+        dolore error maxime, minima iste!
+      </p>
+      <section class="our-team">
+        <div class="member-card">
+          <img src="https://api.lorem.space/image/face?w=350&h=350" />
+          <h2 class="title-m">CEO</h2>
+          <p class="title-m">Lorem, ipsum dolor.</p>
+        </div>
+        <div class="member-card">
+          <img src="https://api.lorem.space/image/face?w=350&h=350" />
+          <h2 class="title-m">PR</h2>
+          <p class="title-m">Lorem, ipsum dolor.</p>
+        </div>
+        <div class="member-card">
+          <img src="https://api.lorem.space/image/face?w=350&h=350" />
+          <h2 class="title-m">HR</h2>
+          <p class="title-m">Lorem, ipsum dolor.</p>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+          return false;
+        }
+        document.addEventListener("contextmenu", function (e) {
+          e.preventDefault();
+        });
+      };
+    </script>
+  </body>
+</html>
